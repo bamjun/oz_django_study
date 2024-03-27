@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "articles.apps.ArticlesConfig",
 ]
 
 MIDDLEWARE = [
@@ -121,3 +122,17 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+import pymysql
+
+pymysql.install_as_MySQLdb()
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.mysql",
+        "NAME": "django_study_poetry",
+        "USER": "root",
+        "PASSWORD": "1Rlaqjawns@18",
+        "HOST": "localhost",
+        "PORT": "3306",
+    }
+}

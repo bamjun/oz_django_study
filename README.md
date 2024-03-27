@@ -7,3 +7,5 @@
   ```bash
   poetry run isort . && poetry run black . && poetry run mypy .
   ```
+
+  poetry add pymysql cryptography
