@@ -43,6 +43,7 @@ jobs:
       - name: Install dependencies
         run: |
           poetry install
+          potry --version
 
       - name: Run black
         run: |
