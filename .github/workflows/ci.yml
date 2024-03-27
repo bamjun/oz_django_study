@@ -9,9 +9,9 @@ jobs:
     env:
       DB_HOST: 127.0.0.1
       DB_PORT: 3306
-      DB_USER: roo
-      DB_PASSWORD: 1234
-      DB_DATABASE: oz_django
+      DB_USER: root
+      DB_PASSWORD: 1Rlaqjawns@18
+      DB_DATABASE: django_study_poetry
     steps:
       - name: Check out the codes
         uses: actions/checkout@v2
